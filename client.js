@@ -1,4 +1,3 @@
-
 import * as config from './config';
 import * as mediasoup from 'mediasoup-client';
 import deepEqual from 'deep-equal';

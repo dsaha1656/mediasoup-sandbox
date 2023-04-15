@@ -163,8 +163,8 @@ async function startMediasoup() {
   // audioLevelObserver for signaling active speaker
   //
   const audioLevelObserver = await router.createAudioLevelObserver({
-		interval: 800
-	});
+                interval: 800
+        });
   audioLevelObserver.on('volumes', (volumes) => {
     const { producer, volume } = volumes[0];
     log('audio-level volumes event', producer.appData.peerId, volume);
@@ -786,3 +786,6 @@ async function updatePeerStats() {
     }
   }
 }
+
+// preflight check Access-Control-Allow-Headers and Access-Control-Allow-Origin
+// headers
